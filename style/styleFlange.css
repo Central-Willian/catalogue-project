@@ -1,0 +1,142 @@
+@charset 'UTF-8';
+
+@font-face{
+	font-family: 'baloo';
+	src: url(../font/Baloo2-Bold.ttf);
+}
+
+@font-face{
+	font-family: 'baloo2';
+	src: url(../font/Baloo2-Regular.ttf);
+}
+
+:root{
+	--color0: #1E1E1E;
+	--color1: #E6E6E6;
+	--color2: #8D9C57;
+	--color3: #CFCDBA;
+	
+	--fontHeader: 'baloo';
+	--font: 'baloo2';
+}
+
+*{
+	font-style: normal;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: var(--color1);
+}
+
+header{
+	height: 90px;
+	background-color: var(--color2);
+}
+
+h1{
+	font-family: var(--fontHeader);
+	font-size: 3.5em;
+	margin-left: 30px;
+	color: var(--color1);
+}
+
+nav{
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	left: 0;
+	background-color: var(--color3);
+}
+
+ul {
+  padding: 30px 30px;
+}
+
+nav a{
+	font-family: var(--font);
+	font-size: 1.2em;
+	text-decoration: none;
+	color: var(--color0);
+}
+
+nav li:hover{
+	background-color: var(--color1);
+}
+
+main{
+	margin-left: 300px;
+}
+
+#annotation{
+	width: 800px;
+	margin: 30px auto;
+	border: solid 1px var(--color0);
+	border-radius: 9px;
+}
+
+h2{
+	font-family: var(--fontHeader);
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 9px 9px 0px 0px;
+	color: var(--color0);
+	background-color: var(--color3);
+}
+
+#annotation ul{
+	font-family: var(--font);
+	font-size: 1.2em;
+}
+
+.table{
+	border-radius: 9px;
+	margin: 30px auto;
+	padding: 9px;
+}
+
+.tableHeader{
+	background-color: var(--color3);
+}
+
+.table th{
+	border: solid 1px var(--color0);
+	font-family: var(--fontHeader);
+	font-size: 1.50em;
+	text-align: center;
+	padding: 0px 9px;
+	color: var(--color0);
+	background-color: var(--color3);
+}
+
+.table td{
+	border: solid 1px var(--color0);
+	font-family: var(--font);
+	font-size: 1.2em;
+	text-align: center;
+	color: var(color0);
+}
+
+main p{
+	font-family: var(--font);
+	font-size: 1.2em;
+	color: var(--color0);
+	text-align: center;
+}
+
+footer{
+	height: 30px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: var(--color2);
+}
+
+footer p{
+	font-family: var(--font);
+	font-size: 1.2em;
+	text-align: center;
+	color: var(--color1);
+}
